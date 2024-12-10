@@ -37,6 +37,9 @@ def calculate_bill(units):
     # Total bill
     total_bill = (energy_charge + electricity_duty + fixed_charge) - subsidy
     
+     # Round the total bill to two decimal places
+    total_bill = round(total_bill, 2)
+    
     return {
         "Energy Charge": energy_charge,
         "Electricity Duty": electricity_duty,
