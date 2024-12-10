@@ -30,6 +30,7 @@ def calculate_bill(units):
     
     # Electricity duty: 5% of (energy charge + fixed charge)
     electricity_duty = 0.05 * (energy_charge + fixed_charge)
+    electricity_duty = round(electricity_duty, 2)
     
     # Government subsidy: valid for up to 120 units
     subsidy = 0.75 * units if units <= 120 else 0.75 * 120
