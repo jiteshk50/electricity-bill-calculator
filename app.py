@@ -42,6 +42,7 @@ def calculate_bill(units):
     total_bill = round(total_bill, 2)
     
     return {
+        "Units Consumed": units,
         "Energy Charge": energy_charge,
         "Electricity Duty": electricity_duty,
         "Fixed Charge": fixed_charge,
