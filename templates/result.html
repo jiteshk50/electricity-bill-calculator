@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Electricity Bill Details</h1>
+        <ul>
+            <li><strong>Energy Charge:</strong> ₹{{ bill_details["Energy Charge"] }}</li>
+            <li><strong>Electricity Duty:</strong> ₹{{ bill_details["Electricity Duty"] }}</li>
+            <li><strong>Fixed Charge:</strong> ₹{{ bill_details["Fixed Charge"] }}</li>
+            <li><strong>Subsidy:</strong> ₹{{ bill_details["Subsidy"] }}</li>
+            <li><strong>Total Bill:</strong> ₹{{ bill_details["Total Bill"] }}</li>
+        </ul>
+        <a href="/">Calculate Again</a>
+    </div>
+</body>
+</html>
